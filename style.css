@@ -1,0 +1,237 @@
+/* Portfolio CSS */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #081b29;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background: #0ef;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #001b29;
+  text-decoration: none;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #001b29;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #fff;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 100px;
+  background: #081b29;
+  color: #fff;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-sci a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #0ef;
+  font-size: 20px;
+  transition: transform 0.3s;
+}
+
+.home-sci a:hover {
+  transform: scale(1.2);
+}
+
+.btn-box,
+.read {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #001b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideTop 1s ease forwards;
+  animation-delay: 2s;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+  margin-top: 20px;
+}
+
+.read:hover,
+.btn-box:hover {
+  background: #0ef;
+  color: #001b29;
+  box-shadow: 0 0 20px #0ef;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 100px;
+  background: #112e42;
+  gap: 50px;
+}
+
+.about-img img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.about-text h2,
+.sub-title,
+.heading1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services {
+  padding: 60px 100px;
+  background: #081b29;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.services-list > div {
+  flex: 1;
+  background: #112e42;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.services-list > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px #0ef;
+}
+
+.container1 {
+  padding: 60px 100px;
+}
+
+.Technical-bars .bar {
+  margin-bottom: 20px;
+}
+
+.progress-line {
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-line span {
+  display: block;
+  height: 100%;
+  background: #0ef;
+}
+
+.radical-bars {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background: #112e42;
+  border-radius: 20px;
+  width: 180px;
+}
+
+.radical-bars svg {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0ef;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.professional-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Space between circles */
+  margin-top: 20px;
+}
+
+.radical-bars {
+  width: 180px;
+  height: 220px;
+  text-align: center;
+  position: relative;
+}
+
+.radical-bars svg {
+  width: 100%;
+  height: auto;
+}
+
+.percentage {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #0ef;
+}
+
+.text {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #fff;
+}
+.path {
+  fill: none;
+  stroke: #0ef;
+  stroke-width: 15;
+  stroke-dasharray: 502; /* Approximate circumference of circle (2πr with r ≈ 80) */
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s ease;
+}
+.home-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 50%; /* Makes it circular */
+  border: 5px solid #00abf0; /* Stylish border */
+  box-shadow: 0 0 20px rgba(0, 171, 240, 0.4); /* Optional soft glow */
+}
